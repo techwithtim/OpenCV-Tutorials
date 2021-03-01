@@ -12,7 +12,7 @@ while True:
     image[:height//2, :width//2]=frameshrunk [:,::-1]          #first quadrant, similar cartesian i.e. top right is 1st quadrant; frameshrunk[keeps it straight:flips horizontally ie across y axis]
     image[:height//2, width//2:] = frameshrunk                   #2nd quadrnt, top left is 2nd quadrant
     image[height//2:, width//2:] = frameshrunk[::-1,:]         # 3rd quadrant, bottom left is 3rd quadrant
-    image[height//2:, :width//2:] = frameshrunk[::-1,::-1]    # 4th quadrant, bottom right is 4th quadrant
+    image[height//2:, :width//2] = frameshrunk[::-1,::-1]    # 4th quadrant, bottom right is 4th quadrant
 
 #Reference graph below:
 #               |

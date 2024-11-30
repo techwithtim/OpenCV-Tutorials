@@ -6,7 +6,7 @@ img = cv2.resize(img, (0, 0), fx=0.75, fy=0.75)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 corners = cv2.goodFeaturesToTrack(gray, 100, 0.01, 10)
-corners = np.int0(corners)
+corners = np.intp(corners)
 
 for corner in corners:
 	x, y = corner.ravel()

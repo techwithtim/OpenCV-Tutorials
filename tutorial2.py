@@ -1,7 +1,7 @@
 import cv2
 import random
 
-img = cv2.imread('assets/logo.jpg', -1)
+img = cv2.imread('OpenCV-Tutorials/assets/logo.jpg', -1)
 
 # Change first 100 rows to random pixels
 for i in range(100):
